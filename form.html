@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>My Example</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('#country').on('change', function() {
+            
+          if ( this.value == '1')
+          
+          {$("#indiaa").show();
+               $("#azerbai").hide();
+            
+          }
+          else  if ( this.value == '2')
+          {
+              $("#indiaa").hide();
+            $("#azerbai").show();
+          }
+          else if(this.value=="0"){
+              $("#none").show();
+            $("#indiaa").hide();
+            $("#azerbai").hide();
+          }
+         
+        });
+    });
+    </script>
+
+<body>
+    <form class="myForm" method="get"  action="/html/codes/html_form_handler.cfm">
+        <div>
+            <p>
+            <label>Country
+            
+                    <select id="country" name="pickup_place">
+                    <option class="select" selected value="0">--select--</option>
+                    <option value="1"  >India</option>
+                    <option value="2" >Azerbaijan</option>
+                    </select>
+                
+            </label>
+        </p>
+        </div>
+    
+    
+
+
+
+    
+<div id="azerbai">
+    <p>
+        <label>Name of Company*
+        <input type="text" name="company" required>
+        </label> 
+        </p>
+        <p>
+            <label>ABN/ACN*
+            <input type="text" name="abn" required>
+            </label> 
+            </p>
+        
+            <p>
+                <label>Address*
+                <input type="text" name="add" required>
+                </label> 
+                </p>
+                <p>
+                    <label>City*
+                    <input type="text" name="city" required>
+                    </label> 
+                    </p>
+                    <p>
+                        <label>State*
+                        <input type="text" name="state" required>
+                        </label> 
+                        </p>
+                        <p>
+                            <label>PostCode*
+                            <input type="text" name="post" required>
+                            </label> 
+                            </p>
+        
+                        <p>
+                            <label>Email*
+                                <input type="email" name="Email" required>
+                                </label> 
+                                </p>
+                                <p>
+                                <label>Tel*
+                                    <input type="tel" name="tel" required>
+                                    </label> 
+                                    </p>
+         <p>
+             <label>Fax
+                 <input type="text" name="fax" required>
+                </label> 
+                </p>
+            <p>
+               <label>Contact Person*
+                <input type="text" name="con" required>
+              </label> 
+            </p>
+            <p>
+               <label>Job Title*Job Title*
+                   <input type="text" name="tile" required>
+                   </label> 
+             </p>
+             <p>
+           <label>Turnover (per year)*
+           <input type="text" name="turn" required>
+              </label> 
+             </p><p>
+                 <label>Imports (per year)*
+            <input type="text" name="imports" required>
+          </label> 
+           </p><p>
+             <label>Application/Use of product*
+                 <input type="text" name="app" required>
+            </label> 
+            </p>
+        
+                                                                                                                               
+        
+        <fieldset>
+        <legend>Your Areas of Activity (please tick appropriate) </legend>
+        <p><label class="choice"> <input type="checkbox" name="extras" value="baby">Producer ? </label> 
+        <label class="choice"> <input type="checkbox" name="extras" value="wheelchair"> Manufacturer ? </label>
+        <label class="choice"> <input type="checkbox" name="extras" value="tip"> Exporter? </label>
+        <label class="choice"> <input type="checkbox" name="extras" value="tip"> Merchant Importer? </label>
+        <label class="choice"> <input type="checkbox" name="extras" value="tip">Agent?  </label></p>
+        <p><label class="choice"> <input type="checkbox" name="extras" value="tip"> Services? </label>
+            <label class="choice"> <input type="checkbox" name="extras" value="tip"> Services? </label>
+            <label class="choice"> <input type="checkbox" name="extras" value="tip"> Trading House? </label>
+            <label class="choice"> <input type="checkbox" name="extras" value="tip">Importer? </label>
+            <label class="choice"> <input type="checkbox" name="extras" value="tip"> Representative? </label></p>
+            
+        </fieldset>
+        <p>
+            <label>Product*
+            <input type="text" name="product" required>
+            </label> 
+            </p>
+            <p>
+              <p>
+                    <label>HS Code*
+                    <input type="text" name="hs" required>
+                    </label> 
+                    </p>
+                    <p>
+                        <p>
+                            <label>Trade Query*
+                            <input type="text" name="trade" required>
+                            </label> 
+                            </p>
+                            <p><p>
+                                <label>Countries importing from at present*
+                                <input type="text" name="im" required>
+                                </label> 
+                                </p>
+                                <p>
+                                    <p>
+                                        <label>Verification Code*
+                                        <input type="text" name="customer_name" required>
+                                        </label> 
+                                        </p>
+
+                                    </div>
+ 
+        
+
+
+
+<div id="indiaa">
+<div>
+<p>
+<label>Name of Company*
+<input type="text" name="customer_name" required>
+</label> 
+</p>
+<p>
+    <label>Year of established*
+    <input type="text" name="customer_name" required>
+    </label> 
+    </p>
+
+    <p>
+        <label>IEC - number*
+        <input type="text" name="customer_name" required>
+        </label> 
+        </p>
+        <p>
+            <label>PAN - number*
+            <input type="text" name="customer_name" required>
+            </label> 
+            </p>
+            <p>
+                <label>Address*
+                <input type="text" name="customer_name" required>
+                </label> 
+                </p>
+                <p>
+                    <label>City*
+                    <input type="text" name="customer_name" required>
+                    </label> 
+                    </p>
+
+                <p>
+                    <label>State*
+                        <input type="text" name="customer_name" required>
+                        </label> 
+                        </p>
+                        <p>
+                        <label>PostCode*
+                            <input type="text" name="customer_name" required>
+                            </label> 
+                            </p>
+ <p>
+     <label>Email*
+         <input type="text" name="customer_name" required>
+        </label> 
+        </p>
+    <p>
+       <label>Tel*
+        <input type="text" name="customer_name" required>
+      </label> 
+    </p>
+    <p>
+       <label>Fax
+           <input type="text" name="customer_name" required>
+           </label> 
+     </p>
+     <p>
+   <label>Website*
+   <input type="text" name="customer_name" required>
+      </label> 
+     </p><p>
+         <label>Contact Person*
+    <input type="text" name="customer_name" required>
+  </label> 
+   </p><p>
+     <label>Job Title*
+         <input type="text" name="customer_name" required>
+    </label> 
+    </p>
+     <p>
+     <label>No of Staff*
+    <input type="text" name="customer_name" required>
+      </label> 
+     </p>
+       <p>
+   <label>Bank*
+   <input type="text" name="customer_name" required>
+     </label> 
+      </p>
+     <p>
+       <label>Turnover (per year)*
+    <input type="text" name="customer_name" required>
+     </label> 
+                  </p>
+  <p>
+    <label>Exports*
+         <input type="text" name="customer_name" required>
+      </label> 
+   </p>
+     <p>
+       <label>Membership of Export Promotion Council / Chamber of Commerce *
+          <input type="text" name="customer_name" required>
+        </label> 
+          </p>
+        <p>
+      <label>Quality rating (Example - ISO rating, star rating (trading house)*
+       <input type="text" name="customer_name" required>
+      </label> 
+      </p>
+      <p>
+    <label>Application/Use of product*
+    <input type="text" name="customer_name" required>
+   </label> 
+        </p>
+                                                                                                                       
+
+<fieldset>
+<legend>Your Areas of Activity (please tick appropriate) </legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="baby">Producer ? </label> 
+<label class="choice"> <input type="checkbox" name="extras" value="wheelchair"> Manufacturer ? </label>
+<label class="choice"> <input type="checkbox" name="extras" value="tip"> Exporter? </label>
+<label class="choice"> <input type="checkbox" name="extras" value="tip"> Merchant Importer? </label>
+<label class="choice"> <input type="checkbox" name="extras" value="tip">Agent?  </label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="tip"> Services? </label>
+    <label class="choice"> <input type="checkbox" name="extras" value="tip"> Services? </label>
+    <label class="choice"> <input type="checkbox" name="extras" value="tip"> Trading House? </label>
+    <label class="choice"> <input type="checkbox" name="extras" value="tip">Importer? </label>
+    <label class="choice"> <input type="checkbox" name="extras" value="tip"> Representative? </label></p>
+    
+</fieldset>
+<p>
+    <label>Type of industries you want to target*
+    <input type="text" name="customer_name" required>
+    </label> 
+    </p>
+    <p>
+      <p>
+            <label>Any additional information*
+            <input type="text" name="customer_name" required>
+            </label> 
+            </p>
+            <p>
+                <p>
+                    <label>Product*
+                    <input type="text" name="customer_name" required>
+                    </label> 
+                    </p>
+                    <p><p>
+                        <label>HS Code*
+                        <input type="text" name="customer_name" required>
+                        </label> 
+                        </p>
+                        <p>
+                            <p>
+                                <label>Countries exporting to at present*
+                                <input type="text" name="customer_name" required>
+                                </label> 
+                                </p>
+                                <p>
+                                    <p>
+                                        <label>Verification Code*
+                                        <input type="text" name="customer_name" required>
+                                        </label> 
+                                        </p>
+                                        <p>       
+
+
+
+</div>
+
+
+</div>
+<p><button>Submit Booking</button></p>
+</form>
+<div id="none" class="none">
+
+</div>
+</body>
+</html>
